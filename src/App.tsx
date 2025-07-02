@@ -1,8 +1,8 @@
-import { NavMenu } from './components/Header/NavMenu';
-import { Main } from './components/Main/Main';
-import { Footer } from './components/Footer/Footer';
-import { useApp } from './components/store/useApp';
-import { theme } from './data/theme';
+import { NavMenu } from '@/components/Header/NavMenu';
+import { Main } from '@/components/Main/Main';
+import { Footer } from '@/components/Footer/Footer';
+import { useApp } from '@/store/useApp';
+import { theme } from '@/data/theme';
 
 function App() {
   const isDark = useApp((state) => state.isDark);

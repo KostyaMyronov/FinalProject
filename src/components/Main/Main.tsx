@@ -1,6 +1,6 @@
-import { Host } from './Host';
-import { Form } from './Form';
-import { Reviews } from './Reviews';
+import { Host } from '@/components/Main/Host';
+import { Form } from '@/components/Main/Form/Form';
+import { Reviews } from '@/components/Main/Reviews';
 
 export const Main = () => {
   return (

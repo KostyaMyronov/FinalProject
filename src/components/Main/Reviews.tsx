@@ -1,7 +1,7 @@
-import { data } from '../../data/data';
+import { data } from '@/data/data';
 import { FaStar } from 'react-icons/fa';
-import { theme } from '../../data/theme';
-import { useApp } from '../store/useApp';
+import { theme } from '@/data/theme';
+import { useApp } from '@/store/useApp';
 
 export const Reviews = () => {
   const isDark = useApp((state) => state.isDark);
@@ -25,7 +25,11 @@ export const Reviews = () => {
             </section>
 
             <h4 className='text-[36px] leading-[43px]  mt-[21px]'>{title}</h4>
-            <h5 className={`text-[24px] leading-[29px] mt-[19px] ${isDark ? theme.specialTextDark : theme.specialTextLight}`}>{author}</h5>
+            <h5
+              className={`text-[24px] leading-[29px] mt-[19px] ${isDark ? theme.specialTextDark : theme.specialTextLight}`}
+            >
+              {author}
+            </h5>
           </section>
         );
       })}
